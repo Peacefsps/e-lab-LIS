@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Oswald&family=PT+Sans&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+button {
+    all: unset;
+    cursor: pointer;
+}
+/* button:focus {
+    outline: 1px solid lightblue;
+} */
+nav {
+    padding: 43px 60px 24px 33px;
+    margin-bottom: 21px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    margin-bottom: 21px;
+}
+.topnavleft {
+    display: flex;
+    align-items: center;
+}
+.topnavleft button {
+    margin-right: 37px;
+}
+.topnavleft h1 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 900px;
+    color: #5b5b5b;
+}
+.topnavright {
+    display: flex;
+    align-items: center;
+}
+.topnavright button:last-of-type{
+    margin-left: 10px;
+}
+.topnavright svg {
+    vertical-align: middle;
+}
+.topnavright p {
+    font-size: 24px;
+    font-weight: 900px;
+    color: #5b5b5b;
+    line-height: 28px;
+    margin-left: 16px;
+}
+.notification {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    color: #ffffff;
+    position: absolute;
+    font-size: 10px;
+    top: 50px;
+    right: 305px;
+    text-align: center;
+    border: 0.5px solid white;
+    line-height: 18px;
+}
+.main {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 148px);
+}
+.sidesection {
+    position: fixed;
+    width: 347px;
+    background-color: #ffffff;
+    box-shadow: 6px -5px 16px -5px rgba(0, 0, 0, 0.25);
+    margin-right: 22px;
+    padding-top: 22px;
+    overflow-y: auto;
+    max-height: calc(100vh - 148px);
+}
+.sidemenu {
+    display: flex;
+    padding: 13px 37px 13px 18px;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+.sidemenu:hover .menuitem svg path, .sidemenu.active .menuitem svg path{
+    fill: #9C3030;
+}
+.sidemenu button {
+   border: 3px solid transparent;
+}
+.sidemenu:hover button, .sidemenu.active button {
+    border-bottom: 3px solid #9C3030;
+}
+.sidemenu button {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: #5b5b5b;
+    cursor: pointer;
+}
+.panelmenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    color: #5b5b5b;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 500px;
+    text-align: center;
+}
+.panelmenu button {
+     all: unset;
+     background-color: #EFEFEF;
+     margin-bottom: 3px;
+     padding: 16px 0 10px 0;
+}
+.panelmenu button:hover {
+    background-color: #c4c4c4;
+    cursor: pointer;
+}
+.menuitem {
+    display: flex;
+    align-items: center;
+}
+.menuitem p {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: #5b5b5b;
+}
+.menuitem svg {
+    margin-right: 25px;
+}
+.mainsection {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 369px);
+    margin-left: auto;
+}
+.mainmenu {
+    flex-grow: 1;
+    background-color: #ffffff;
+    box-shadow: -1px 0px 6px 5px #E5E5E5;
+    margin-bottom: 18px;
+}
+.mainmenu div {
+    display: flex;
+    align-items: center;
+}
+.inner-header {
+    height: fit-content;
+    padding: 21px;
+    justify-content: space-between;
+    width: 100%;
+}
+.mainmenu h3 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    color: #5b5b5b;
+}
+.mainmenu h4 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 900;
+    color: #5b5b5b;
+}
+.mainmenu svg {
+    margin: 0 14px;
+    width: 15px;
+    vertical-align: middle;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 4px 7px #E5E5E5;
+    padding: 41px 16px 41px 25px;
+}
+.footer p {
+    font-size: 19px;
+    color: #5b5b5b;
+    font-weight: 900px;
+}
+.footer div {
+    display: flex;
+}
+.hide {
+    display: none;
+}
